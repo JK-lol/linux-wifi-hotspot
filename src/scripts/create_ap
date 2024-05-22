@@ -1761,12 +1761,12 @@ EOF
     elif [[ "$WPA_VERSION" == "4" ]]; then
     # Configuring for WPA3-only Mode
     cat << EOF >> $CONFDIR/hostapd.conf
-wpa=3
+wpa=2
 wpa_${WPA_KEY_TYPE}=${PASSPHRASE}
 wpa_key_mgmt=SAE
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
-ieee80211w=2
+ieee80211w=1
 EOF
     else
         # Original configuration for WPA_VERSION other than 3
