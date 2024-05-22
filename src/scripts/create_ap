@@ -1766,7 +1766,7 @@ wpa_${WPA_KEY_TYPE}=${PASSPHRASE}
 wpa_key_mgmt=SAE
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
-ieee80211w=1
+ieee80211w=2
 EOF
     else
         # Original configuration for WPA_VERSION other than 3
